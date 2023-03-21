@@ -4,17 +4,18 @@ import './App.css';
 function App() {
   return (
     <div className="App">
-      <Aks></Aks>
+      <Aks name='k**a' address='ase akta'></Aks>
       <Aks></Aks>
       <Abukawsar name='kawsar000' marrigeTarget='Keya'></Abukawsar>
       <Abukawsar name="AbuKawSar222"></Abukawsar>
     </div>
   );
 }
-function Aks() {
+function Aks(props) {
   return (
     <div>
-      <h4>Abu Kaw Sar</h4>
+      <h4>Name: {props.name}</h4>
+      <p>address: {props.address}</p>
         <h1>okeykkk</h1>
     </div>
   )
